@@ -10,14 +10,14 @@ class Counter extends React.Component {
     this.setState(() => ({counter: this.state.counter+1}));
   }
   render() {
-    return <div >
+    return <div className="div">
     <h1><p>{this.state.counter}</p></h1>
     <button onClick={this.increment}>Increment</button>
     </div>;
   }
 }
 
-const el = <Counter className="div"/>; 
+const el = <Counter />; 
 ReactDOM.render(
   el, 
   document.getElementById('root')
