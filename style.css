@@ -3,7 +3,6 @@ h1, p {
   font-size: larger;
 }
 div{
-background-color: blue;
-display: flex;
+background-color: #7c797c;
 border: 2px solid;
 }
