@@ -1,3 +1,10 @@
 h1, p {
   font-family: Lato;
+  font-size: larger;
+}
+div{
+background-color: blue;
+display: flex;
+color: red;
+border: 2px solid;
 }

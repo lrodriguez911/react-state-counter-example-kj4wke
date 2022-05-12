@@ -7,17 +7,17 @@ class Counter extends React.Component {
     counter: 0
   }
   increment = () => {
-    this.setState({counter: this.state.counter+1});
+    this.setState(() => ({counter: this.state.counter+1}));
   }
   render() {
-    return <div>
-    <p>{this.state.counter}</p>
+    return <div >
+    <h1><p>{this.state.counter}</p></h1>
     <button onClick={this.increment}>Increment</button>
     </div>;
   }
 }
 
-const el = <Counter />; 
+const el = <Counter className="div"/>; 
 ReactDOM.render(
   el, 
   document.getElementById('root')
